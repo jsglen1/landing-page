@@ -59,3 +59,25 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilos para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del riel de la barra de desplazamiento */
+}
+
+/* Estilos para el "pulgar" de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #BC8CF3; /* Color del "pulgar" de la barra de desplazamiento */
+  border-radius: 6px; /* Radio de borde del "pulgar" de la barra de desplazamiento */
+}
+
+/* Estilos para el "pulgar" de la barra de desplazamiento cuando se está desplazando */
+::-webkit-scrollbar-thumb:hover {
+  background: #9b59b6; /* Cambiar el color al pasar el ratón sobre el "pulgar" */
+}

@@ -20,7 +20,8 @@ export function DropdownMenuNavbar() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Image
-          src={"/hamburger-button.png"}
+          loading="lazy"
+          src={"/hamburger-button.svg"}
           alt="hamburger-button"
           width={30}
           height={30}

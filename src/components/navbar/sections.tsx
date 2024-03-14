@@ -117,7 +117,7 @@ export function Sections() {
         <NavigationMenuItem>
           <Link href="#about-me" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Tecnologias
+              Tecnologías
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
