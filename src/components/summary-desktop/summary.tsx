@@ -18,11 +18,11 @@ export default function SummaryDesktop(params: PropsSummary) {
             height={100}
           />
         </div>
-        <div className="flex items-center justify-center space-x-3">
+        <div className="flex items-center text-center justify-center space-x-3">
           <p>{params.data.subTitle}</p>
         </div>
       </div>
-      <div className="w-1/2 flex items-center justify-center">
+      <div className="w-1/2 flex items-center text-center justify-center">
         <p>{params.data.content}</p>
       </div>
     </div>

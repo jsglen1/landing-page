@@ -12,7 +12,7 @@ import {
 export default function SectionContactMeDesktop() {
   return (
     <div className="flex flex-col items-center justify-center p-5 gap-20">
-      <section id="contact-me" className="flex w-full px-5 lg:px-10">
+      <div className="flex w-full px-5 lg:px-10">
         {" "}
         <div className="flex items-center justify-center space-x-3 w-1/3  rounded-l-3xl p-5 border-l border-t border-b border-gray-500">
           <Image
@@ -61,7 +61,7 @@ export default function SectionContactMeDesktop() {
             <p className="text-xs">{MAIL_CONTENT}</p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
