@@ -6,6 +6,7 @@ import { INTRODUCTION_DATA } from "@/data/introduction-summary";
 import SummaryDesktop from "@/components/summary-desktop/summary";
 import { WHY_CHOOSE_ME_DATA } from "@/data/why-choose-me-summary";
 import SectionServices from "@/components/section-services/section-services";
+import SectionTechnologies from "@/components/section-technologies/section-technologies";
 
 export default function page() {
   return (
@@ -23,6 +24,9 @@ export default function page() {
       <SummaryDesktop data={WHY_CHOOSE_ME_DATA} />
       <section id="services">
         <SectionServices />
+      </section>
+      <section id="technologies">
+        <SectionTechnologies />
       </section>
     </main>
   );

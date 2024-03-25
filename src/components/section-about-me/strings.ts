@@ -4,4 +4,4 @@ export const CONTENT = `Soy un desarrollador de software dedicado en la creació
 Soy altamente adaptable al entorno de trabajo y poseo una gran capacidad analítica y de resolución de problemas. En mi perfil de GitHub y LinkedIn puede observar mejor mi trayectoria.
 `;
 
-export const URL_IMAGE = `/photo-profile.svg`;
+export const URL_IMAGE = `/pc.svg`;

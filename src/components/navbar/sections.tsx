@@ -15,6 +15,29 @@ import {
 } from "@/components/ui/navigation-menu";
 import { SERVICES_INFO } from "../section-services/strings";
 
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Quien Soy?",
+    href: "#about-me",
+    description: "Un ingeniero de sistemas desarrollador de software",
+  },
+  {
+    title: "Contacta me",
+    href: "#contact-me",
+    description: "Comunicate directamente para asesoría",
+  },
+  {
+    title: "Github",
+    href: "https://github.com/jsglen1",
+    description: "Repositorio de Proyectos",
+  },
+  {
+    title: "Linkedin",
+    href: "https://www.linkedin.com/in/jesus-miguel-g-75956a1b6/",
+    description: "Curriculum Vitae web",
+  },
+];
+
 export function Sections() {
   return (
     <NavigationMenu>
@@ -29,13 +52,16 @@ export function Sections() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Sobre mi</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="#contact-me" title="Contacta me">
-                Comunicate directamente para asesoría
-              </ListItem>
-              <ListItem href="#about-me" title="Quien soy?">
-                Un ingeniero de sistemas desarrollador de software
-              </ListItem>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {components.map((component) => (
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.href}
+                >
+                  {component.description}
+                </ListItem>
+              ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -56,7 +82,7 @@ export function Sections() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="#about-me" legacyBehavior passHref>
+          <Link href="#technologies" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Tecnologías
             </NavigationMenuLink>

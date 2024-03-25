@@ -51,6 +51,14 @@ export function DropdownMenuNavbar() {
                 <Link href={"#about-me"}>
                   <DropdownMenuItem>Quien soy?</DropdownMenuItem>
                 </Link>
+                <Link href={"https://github.com/jsglen1"}>
+                  <DropdownMenuItem>Github</DropdownMenuItem>
+                </Link>
+                <Link
+                  href={"https://www.linkedin.com/in/jesus-miguel-g-75956a1b6/"}
+                >
+                  <DropdownMenuItem>Linkedin</DropdownMenuItem>
+                </Link>
               </DropdownMenuSubContent>
             </DropdownMenuPortal>
           </DropdownMenuSub>
@@ -79,7 +87,7 @@ export function DropdownMenuNavbar() {
         </DropdownMenuGroup>
 
         <DropdownMenuGroup>
-          <Link href={"#start"}>
+          <Link href={"#technologies"}>
             <DropdownMenuItem>Tecnologías</DropdownMenuItem>
           </Link>
         </DropdownMenuGroup>
